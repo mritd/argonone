@@ -2,7 +2,7 @@
 # Contributor: kounch (https://github.com/kounch)
 
 pkgname=argonone-rpi4
-pkgver=20191209
+pkgver=20200607
 pkgrel=1
 pkgdesc="Argon One Service and Control Scripts"
 arch=('any')
