@@ -22,16 +22,16 @@ source=(
 
 sha256sums=(
   "100a231ff8bc29910bad4cc1e216c1760fa2dc3ab67ca1a6691d672d8f50478b"
-  "25cfb38db6c8804dd7091fc1af3ee3505a95394b799e998e81a6d59f721cae09"
+  "5a3c550bc0f866a87acac6a27d3539656fce4ec7931a368d4b56158b78daab94"
   "f6f82283a286c9694a5adc6db842fca2e75845f1ccf0bacfb7ce2efa3c8eaec3"
-  "6a82dd456f02ec5f2de4dc9974eed847670247c9dbf120124acfa6c0b6e5713f"
-  "c6ea312215a7ab4616b01c23adc21b9070771735ded46b5b5695e555a6d1acc6"
+  "5547cc212563ca571b6c22a61a20be2dfce2dd289d035ecea9bc27f4040b3ace"
+  "e538b916dc7842833ae9c9689a43bee714e7a18dc96a9ee59d29cd14f66021e8"
 )
 
 package() {
-  install -Dm755 "${srcdir}"/argonone-config "${pkgdir}"/usr/local/argonone/bin/argonone-config
+  install -Dm755 "${srcdir}"/argonone-config "${pkgdir}"/opt/argonone/bin/argonone-config
   install -Dm755 "${srcdir}"/argononed-poweroff.py "${pkgdir}"/usr/lib/systemd/system-shutdown/argononed-poweroff.py
   install -Dm666 "${srcdir}"/argononed.conf "${pkgdir}"/etc/argononed.conf
-  install -Dm755 "${srcdir}"/argononed.py "${pkgdir}"/usr/local/argonone/bin/argononed.py
+  install -Dm755 "${srcdir}"/argononed.py "${pkgdir}"/opt/argonone/bin/argononed.py
   install -Dm644 "${srcdir}"/argononed.service "${pkgdir}"/usr/lib/systemd/system/argononed.service
 }

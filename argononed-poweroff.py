@@ -1,4 +1,4 @@
-#!/opt/argonone/bin/python3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 # -*- mode: Python; tab-width: 4; indent-tabs-mode: nil; -*-
 # PEP 8, PEP 263.

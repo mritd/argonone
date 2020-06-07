@@ -47,7 +47,7 @@ pre_remove() {
 }
 
 post_remove() {
-  echo "Removing Virtual Environment in /usr/local/argonone..."
-  rm -rf /usr/local/argonone
+  echo "Removing Virtual Environment in /opt/argonone..."
+  rm -rf /opt/argonone
   echo "Software removed. Please remember to disable I2C if not needed any more"
 }
