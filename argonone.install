@@ -1,9 +1,7 @@
 pre_install() {
   echo "Checking Hardware Model..."
   if grep "Raspberry Pi 4" /proc/device-tree/model ; then
-    echo "Building New Virtual Environment in /opt/argonone..."
-    python -m venv --clear /opt/argonone
-    /opt/argonone/bin/python3 -m pip install pysmbus RPi.GPIO
+    /usr/bin/pip install pysmbus RPi.GPIO
 
     echo "Enabling i2C..."
     BOOT_CFG="/boot/config.txt"
@@ -44,12 +42,12 @@ post_install() {
 }
 
 pre_remove() {
-	systemctl stop argononed.service
+  systemctl stop argononed.service
   systemctl deactivate argononed.service
 }
 
 post_remove() {
-	echo "Removing Virtual Environment in /opt/argonone..."
-  rm -rf /opt/argonone
+  echo "Removing Virtual Environment in /usr/local/argonone..."
+  rm -rf /usr/local/argonone
   echo "Software removed. Please remember to disable I2C if not needed any more"
 }
