@@ -8,7 +8,7 @@ pkgdesc="Argon One Service and Control Scripts"
 arch=('any')
 url='https://download.argon40.com/argon1.sh'
 license=('GPL3')
-depends=('i2c-tools' 'libffi' 'lm_sensors' 'python>=3.3' 'python-pip' 'gcc')
+depends=('i2c-tools' 'libffi' 'lm_sensors' 'python>=3.3' 'python-pip' 'gcc' 'raspberrypi-firmware')
 provides=('argonone')
 install=argonone.install
 
@@ -18,7 +18,7 @@ source=(
   "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed.conf"
   "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed.py"
   "https://raw.githubusercontent.com/Elrondo46/argonone/master/argononed.service"
-  )
+)
 
 sha256sums=(
   "100a231ff8bc29910bad4cc1e216c1760fa2dc3ab67ca1a6691d672d8f50478b"
