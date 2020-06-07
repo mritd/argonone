@@ -8,7 +8,7 @@ pkgdesc="Argon One Service and Control Scripts"
 arch=('any')
 url='https://download.argon40.com/argon1.sh'
 license=('GPL3')
-depends=('i2c-tools' 'libffi' 'lm_sensors' 'python>=3.3' 'gcc' 'python' 'python-pip')
+depends=('i2c-tools' 'libffi' 'lm_sensors' 'python>=3.3' 'python-pip' 'gcc')
 provides=('argonone')
 install=argonone.install
 
